@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --bodyBg:#303841;
+    --formBg:#ffffff;
+    --textColor:#fff;
+    --primaryColor:#a30800;
+    --paraColor:#5e6c79;
+    --paraColor:#74828f;
+
+}
+
+body{
+    font-family: 'Roboto Serif', serif;
+    color: var(--textColor);
+    background: var(--bodyBg);
+    padding-bottom: 5em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.sectionHeader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3.1rem;
+    color: var(--primaryColor);
+    margin-bottom: .5em;
+}
+
+.heading,.sub-heading{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 2.5em;
+}
+
+.sub-heading{
+    text-align: left;
+}
+
+.contactForm{
+    display: grid;
+    gap: 3em;
+}
+
+form{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.para{
+    color: var(--paraColor);
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.para2{
+    text-align: left;
+}
+
+.input{
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9rem;
+    padding: 1em;
+    outline: none;
+    background-color: var(--formBg);
+    color: var(--paraColor);
+    border-radius: 10px;
+    border: 1px solid rgb(53, 53, 53);
+    margin-bottom: 1em;
+
+}
+
+.input:focus{
+    border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--textColor);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.map-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.mapBg{
+    position: absolute;
+    background-color: var(--primaryColor);
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+}
+.method a{
+  color:#5e6c79;
+}
+.contactIcon{
+    font-size: 2rem;
+    color: var(--primaryColor);
+    width: 70px;
+}
+
+@media screen and (min-width:800px) {
+    section{
+        max-width: 1100px;
+    }
+    .contactForm{
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .contactMethod{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+* {
+    margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: inherit;
+      }
+    
+      .box {
+        background: linear-gradient(270deg, #e7e5e5, #ed824900, #f0f0f0, #edad7a);
+        background-size: 400% 400%;
+        animation: gradientBG 8s ease infinite;
+        height: 96vh;
+      }
+    
+    
+    
+    
+      body {
+        background: url("./background.png") no-repeat center center fixed;
+        background-size: cover;
+    backdrop-filter: blur(10px);
+        min-height: 100vh;
+        background-color: #f8f9fa; /* fallback */
+        display: block;
+        margin: 0;
+      }
+    
+    
+      .navbar {
+        background: rgba(255, 255, 255, 0.85); /* trắng trong suốt nhẹ */
+        height: 70px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 0;
+        top:0;
+        margin:0;
+      }
+    
+      .navbar {
+        position: sticky;
+        
+        z-index: 1000;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+    
+      .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+    
+      .nav-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 ;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .logo_dau {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #2c3e50;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+        font-style: inherit;
+      }
+    
+      .logo_dau img {
+        height: 40px;
+        width: auto;
+      }
+    
+      .menu a {
+        color: #2c3e50;
+        text-decoration: none;
+        margin-left: 29px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+    
+      .menu a:hover {
+        color: #ff7f50; /* màu cam sáng */
+      }
+    
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .dropdown-content {
+        position: absolute;
+    
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        min-width: 160px;
+        display: none;
+        flex-direction: column;
+        
+        z-index: 999;
+    
+        border-radius: 6px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+    
+      .dropdown-content a {
+        padding: 10px 15px;
+        color: #2c3e50;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3;
+      }
+    
+      .dropdown-content a:hover {
+      
+        background-color: #ff7f50;
+        color: #fff;
+    
+      }
+    
+      /* Show dropdown on hover */
+      .dropdown:hover .dropdown-content {
+        display: flex;
+      }
+    
+      /* Ảnh bên phải */
+      .box img {
+        float: right;
+        width: 500px;
+        height: auto;
+        margin: 20px;
+      }
+    
+      /* Tiêu đề */
+      
+      .search-box {
+        display: flex;
+        align-items: center;
+        margin-left: 370px;
+        flex-direction: row;
+        margin-top: -25px;
+      }
+    
+      .search-box input {
+        padding: 30;
+        margin: 30;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+      }
+    
+      .search-box button {
+        padding: 6px 10px 6px;
+        background-color: #ff7f50;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        color: white;
+        transition: background-color 0.3s;
+      }
+    
+      .search-box button:hover {
+        background-color: #e0673d;
+      }
+
+     .para:hover{
+      color:#e0673d;
+     }

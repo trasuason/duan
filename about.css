@@ -1,0 +1,336 @@
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: inherit;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .box {
+    background: linear-gradient(270deg, #e7e5e5, #ed824900, #f0f0f0, #edad7a);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    height: 96vh;
+  }
+  
+  
+  
+  
+  body {
+    background: url("./background.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: transparent;
+    min-height: 100vh;
+    
+    display: block;
+    
+     backdrop-filter: blur(10px);
+  }
+  
+  
+  .navbar {
+    background: rgba(255, 255, 255, 0.85); /* trắng trong suốt nhẹ */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo_dau {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-style: inherit;
+  }
+  
+  .logo_dau img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin-left: 29px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #ff7f50; /* màu cam sáng */
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+  
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    display: none;
+    flex-direction: column;
+    
+    z-index: 999;
+  
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content a {
+    padding: 10px 15px;
+    color: #2c3e50;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3;
+  }
+  
+  .dropdown-content a:hover {
+   
+    background-color: #ff7f50;
+    color: #fff;
+  
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  /* Ảnh bên phải */
+  .box img {
+    float: right;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #2c3e50;
+    padding: 30px;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 370px;
+    flex-direction: row;
+    margin-top: -25px;
+  }
+  
+  .search-box input {
+    padding: 30;
+    margin: 30;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 6px 10px 6px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #e0673d;
+  }
+
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #ff7a00;
+  }
+
+  h1 {
+    color: #ff7a00;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .wrapper {
+    width: 140px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    left: 250px;
+    top: 30px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff0000;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+
+.mxh i{
+    font-size: 25px;
+cursor: pointer;
+display: flex;
+margin:10px;
+transition: all 0.3s ease; 
+}
+.mxh a,i{
+    cursor: pointer;
+}
+.mxh h2{
+    cursor: pointer;
+}
+.mxh a:nth-of-type(1):hover{
+    color: #3b5998; 
+    
+    text-shadow: 0 0 15px #f5f8fd, 0 0 30px #3b5998, 0 0 45px #e0e2e7;
+}
+.mxh a:nth-of-type(2):hover{
+    color: #E1306C; 
+    
+    text-shadow: 0 0 15px #E1306C, 0 0 30px #E1306C, 0 0 45px #E1306C;
+}
+.mxh a:nth-of-type(3):hover{
+    color:  #211F1F; 
+    
+    text-shadow: 0 0 15px #211F1F, 0 0 30px #211F1F, 0 0 45px #211F1F;}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơn Beverage</title>
+    <link rel="stylesheet" href="./about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <header class="navbar" data-aos="animate__slideInDown" >
+      <div class="nav-container">
+        <a href="#" class="logo"></a>
+        <div id="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-item-cloud"></span>
+        </div>
+
+        <a href="#" class="logo_dau">
+          <img
+            src="./logo.png"
+            alt="Logo Hân"
+          />
+          <span>Sơn Beverage</span>
+        </a>
+
+        <nav class="menu">
+          <a href="./duan.html">Home</a>
+
+          <!-- Dropdown chỉ bọc Menu -->
+          <div class="dropdown">
+            <a href="#Menu">Menu ▾</a>
+            <div class="dropdown-content">
+              <a href="./duan.html">Trà sữa</a>
+              <a href="./duan.html">Cà phê</a>
+              <a href="./duan.html">Đá xay</a>
+              <a href="./duan.html">Topping</a>
+            </div>
+          </div>
+
+          <a href="#">About</a>
+          <a href="./contact.html" target="_blank">Contact</a>
+
+          <div class="search-box">
+            <input type="text" placeholder="Tìm đồ uống..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+    </div>
+    <div class="container" data-aos="animate__slideInDown" >
+      <h1>About Sơn Beverage</h1>
+
+      <p>
+        <strong>Sơn Beverage</strong> là quán nước nhỏ mang đậm nét thân quen,
+        bình dị – nơi bạn có thể dừng chân, gọi ly nước mát và cảm nhận chút mộc
+        mạc giữa nhịp sống vội vã.
+      </p>
+
+      <p>
+        Tụi mình chọn nguyên liệu đơn giản, sạch sẽ – từ nước sấu, chanh tươi
+        cho đến sữa hạt rang thơm. Giá cả dễ chịu để bất kỳ ai ghé ngang cũng có
+        thể thưởng thức.
+      </p>
+
+      <p>
+        Chúng mình không chạy theo sang chảnh – chỉ mong giữ lại cái cảm giác
+        "quán nước đầu ngõ", nơi ai cũng thấy thân quen như về nhà.
+      </p>
+
+      <div class="mxh">
+        <h2>Kết nối với tôi</h2>
+        <a href="https://www.facebook.com/sonzz.nss?locale=vi_VN" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/nguyenson3144/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://github.com/trasuason" target="_blank"><i class="fa-brands fa-github"></i></a>
+       </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init({
+      useClassNames: true,
+      initClassName: false,
+      animatedClassName: 'animate__animated',
+    });
+    </script>
+  </body>
+</html>

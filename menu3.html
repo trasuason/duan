@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./menu1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar animate__animated animate__backInLeft">
+      <div class="nav-container">
+        <a href="#" class="logo"></a>
+        <div id="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-item-cloud"></span>
+        </div>
+
+        <a href="#" class="logo_dau">
+          <img src="./logo.png" alt="Logo Hân" />
+          <span>Sơn Beverage</span>
+        </a>
+
+        <nav class="menu">
+          <a href="./duan.html">Home</a>
+
+          <!-- Dropdown chỉ bọc Menu -->
+          <div class="dropdown">
+            <a href="#Menu">Menu ▾</a>
+            <div class="dropdown-content">
+              <a href="./duan.html">Trà sữa</a>
+              <a href="./duan.html">Cà phê</a>
+              <a href="./duan.html">Đá xay</a>
+              <a href="./duan.html">Topping</a>
+            </div>
+          </div>
+
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+
+          <!-- Bọc input + button vào một khối riêng -->
+          <div class="search-box">
+            <input type="text" placeholder="Tìm đồ uống..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="signup">
+            <a href="./đangki.html" target="_blank">signup/signin</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container animate__animated animate__slideInDown">
+      <div class="container-content">
+        <div class="big-pic">
+          <img
+            id="mainImage"
+            src="anhtrasua/khoaimon1.webp"
+            alt=""
+            width="300"
+            height="400"
+          />
+        </div>
+        <div class="small-pics">
+          <img
+            class="thumbnail active"
+            src="./anhtrasua/khoaimon2.webp"
+            alt=""
+            width="100"
+            height="100"
+          />
+          <img
+            class="thumbnail"
+            src="./anhtrasua/khoaimon3.jpg"
+            alt=""
+            width="100"
+            height="100"
+          />
+          <img
+            class="thumbnail"
+            src="./anhtrasua/khoaimon5.webp"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+        <button class="buy" onclick="function1()">
+          <span>Mua ngay</span>
+        </button>
+        <a href="#" class="buy-cart"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </div>
+    <div class="banner">
+      <h1 class="animate__animated animate__slideInDown">Trà Sữa Khoai Môn</h1>
+      <p class="animate__animated animate__slideInDown">
+        Beverage mang đến cho bạn trải nghiệm giải khát tinh tế với các dòng<br />
+        nước trái cây, trà và thức uống đặc biệt được pha chế từ nguyên liệu
+        <br />
+        tươi sạch. Không chất bảo quản – không màu nhân tạo – chỉ còn lại sự
+        <br />
+        thanh mát tự nhiên trong từng ngụm đầu tiên.
+      </p>
+      <h2 class="animate__animated animate__slideInDown">đ23.000</h2>
+      <div class="banner-content">
+        <p class="animate__animated animate__slideInDown">vận chuyển:</p>
+        <i class="fa-solid fa-car"> </i>
+        <a class="animate__animated animate__slideInDown"
+          >Chỉ giao trong khu vực Bình Dương</a
+        >
+      </div>
+      <div class="banner-map">
+        <p class="animate__animated animate__slideInDown">vị trí:</p>
+        <i class="fa-solid fa-map-location-dot"></i>
+        <a
+          class="animate__animated animate__slideInDown"
+          href="https://www.google.com/maps/dir/11.0531304,106.6337835/T%C3%A2n+%C4%90%E1%BB%8Bnh,+Th%C3%A0nh+ph%E1%BB%91+B%E1%BA%BFn+C%C3%A1t,+B%C3%ACnh+D%C6%B0%C6%A1ng,+Vi%E1%BB%87t+Nam/@11.0567995,106.629748,1578m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3174ce076762ccab:0x28035a2bb4edf206!2m2!1d106.635025!2d11.0600602?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"
+          >khu phố 2 Tân Định thị xã Bến Cát tỉnh Bình Dương</a
+        >
+      </div>
+    </div>
+
+    <script src="./menu1.js"></script>
+
+    <script type="text/javascript">
+      function function1() {
+        swal(
+          "Xin Lỗi",
+          "Hệ Thống không nhận diện được, . Vui lòng đăng nhập.",
+          "error"
+        ).then(() => {
+          // Thay URL bên dưới bằng nơi bạn muốn chuyển tới
+          window.location.href = "đangki.html";
+        });
+      }
+    </script>
+  </body>
+</html>

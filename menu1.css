@@ -1,0 +1,385 @@
+* {
+ 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: inherit;
+  }
+  body {
+    background: url("./background.png") no-repeat center center fixed;
+    background-size: cover;
+backdrop-filter: blur(10px);
+    min-height: 100vh;
+    background-color: #f8f9fa; /* fallback */
+    display: block;
+    margin: 0;
+  }
+
+
+  .navbar {
+    background: rgba(255, 255, 255, 0.85); /* trắng trong suốt nhẹ */
+    height: 80px;
+    display: flex;
+    align-items: center;
+   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo_dau {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-style: inherit;
+  }
+  
+  .logo_dau img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin-left: 29px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #ff7f50; /* màu cam sáng */
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+  
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    display: none;
+    flex-direction: column;
+    
+    z-index: 999;
+  
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content a {
+    padding: 10px 15px;
+    color: #2c3e50;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3;
+  }
+  
+  .dropdown-content a:hover {
+   
+    background-color: #ff7f50;
+    color: #fff;
+  
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  /* Ảnh bên phải */
+  .box img {
+    float: right;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: #2c3e50;
+    padding: 30px;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 370px;
+    flex-direction: row;
+    margin-top: -25px;
+  }
+  
+  .search-box input {
+    padding: 30;
+    margin: 30;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 6px 10px 6px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #e0673d;
+  }
+
+  
+  .signup{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+    right:0;
+    margin-left:385px ;
+    background: #ffff;
+    font-weight: bold;
+    font-style: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+  transition: .5s;
+  
+  }
+  .signup:hover{
+    color:#e35f26;
+    cursor: pointer;
+    transform: translateY(-5px)
+  }
+
+
+
+
+
+
+
+  .container {
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    align-items: center;
+    min-height: 100vh;
+    top: 20px;;
+    right:0;
+  }
+  
+  .container-content {
+    display: grid;
+    grid-template-columns: auto auto; /* 2 cột: 1 lớn, 1 nhỏ */
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .big-pic img {
+    border: 2px solid black;
+    padding: 5px;
+  }
+  
+  .small-pics {
+    display: flex;
+    flex-direction: column; /* Xếp ảnh nhỏ theo hàng ngang */
+    gap: 10px;
+  }
+  
+  .small-pics img {
+    border: 2px solid black;
+    padding: 5px;
+  }
+  .thumbnail {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .thumbnail:hover {
+    border-color: #ccc;
+  }
+  
+  .thumbnail.active {
+    border: 3px solid #ff7f50;
+    box-shadow: 0 0 10px rgba(255, 127, 80, 0.4);
+  }
+  .buy {
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid #e8521b;
+    background:#e8521b;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.buy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0); /* ban đầu trong suốt */
+    transition: background 0.3s ease;
+    z-index: 0;
+}
+
+.buy:hover::before {
+    background: rgba(255, 255, 255, 0.1); /* mờ trắng nhẹ khi hover */
+}
+
+.buy:hover {
+    transform: scale(0.98); /* nhấn nhẹ */
+}
+
+.buy span {
+    position: relative;
+    z-index: 1; /* đảm bảo chữ nằm trên lớp mờ */
+}
+
+.buy-cart{
+    color:#e8521b;
+    font-size: 30px;
+
+}
+.banner{
+    font-size: 10px;
+    display: flex;
+    position: static;
+    left:0;
+}
+.banner h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+   display: flex;
+   position: fixed;
+    left:0;
+    top:23px;
+    color:#fff;
+}
+.banner p {
+    font-family: "Poppins", sans-serif;  
+    font-size: 20px;
+    display: flex;
+   position: fixed;
+   bottom: 380px;
+   left:0;
+   color:#fff;
+
+}
+.banner h2{
+    font-size: 40px;
+    color:#e35f26;
+    display: flex;
+    position: fixed;
+left:0;
+top:250px;
+background: #fadbdb;
+}
+.banner-content p {
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    grid-template-columns: auto auto auto;
+ top:320px;
+ left:0;
+ color:#fff;
+}
+.banner-content i {
+    position:fixed;
+    display: flex;
+    font-size: 15px;
+   justify-content: space-between;
+ top:370px;
+ left:0;
+ color:#e8521b;
+
+}
+.banner-content a{
+    position:fixed;
+    display: flex;
+    font-size: 15px;
+   justify-content: space-between;
+ top:367px;
+ left:20px;
+ color:#fff;
+}
+.banner-map p {
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    grid-template-columns: auto auto auto;
+ top:370px;
+ left:0;
+ text-decoration: none;
+color:#fff;
+
+}
+
+.banner-map i {
+    position:fixed;
+    display: flex;
+    font-size: 15px;
+   justify-content: space-between;
+ top:420px;
+ left:0;
+ color:#e8521b;
+
+}
+.banner-map a{
+    position:fixed;
+    display: flex;
+    font-size: 15px;
+   justify-content: space-between;
+ top:420px;
+ left:20px;
+ text-decoration: none;
+ color:#fff;
+ transition: 0.6s ease;
+}
+.banner-map a:hover{
+    color:#ff7f50;
+
+}

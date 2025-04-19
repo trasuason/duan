@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơn Beverage </title>
+  </head>
+  <link rel="stylesheet" href="contact.css" />
+  <script
+    src="https://kit.fontawesome.com/aa7454d09f.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+  <body>
+    <header class="navbar animate__animated animate__backInLeft" >
+      <div class="nav-container">
+        <a href="#" class="logo"></a>
+        <div id="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-item-cloud"></span>
+        </div>
+
+        <a href="#" class="logo_dau">
+          <img src="./logo.png" alt="Logo Hân" />
+          <span>Sơn Beverage</span>
+        </a>
+
+        <nav class="menu">
+          <a href="./duan.html">Home</a>
+
+          <!-- Dropdown chỉ bọc Menu -->
+          <div class="dropdown">
+            <a href="#Menu">Menu ▾</a>
+            <div class="dropdown-content">
+              <a href="#trasua">Trà sữa</a>
+              <a href="#caffe">Cà phê</a>
+              <a href="#">Đá xay</a>
+              <a href="#">Topping</a>
+            </div>
+          </div>
+
+          <a href="./about.html">About</a>
+          <a href="#">Contact</a>
+
+          <!-- Bọc input + button vào một khối riêng -->
+          <div class="search-box">
+            <input type="text" placeholder="Tìm đồ uống..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact-form animate__animated animate__slideInDown">
+      <h4 class="sectionHeader">contact us</h4>
+      <h1 class="heading"></h1>
+      <p class="para">
+        nơi những ly trà sữa không chỉ là đồ uống, mà còn là trải nghiệm!
+      </p>
+
+      <div class="contactForm">
+        <form action="#">
+          <h1 class="sub-heading">TÔI GIÚP ĐƯỢC GÌ CHO BẠN !</h1>
+          <p class="para para2">
+            bạn ghi lại thông tin để tôi hỗ trợ nhé!
+          </p>
+          <input type="text" class="input" placeholder="tên của bạn" />
+          <input type="text" class="input" placeholder="email" />
+          <input type="text" class="input" placeholder="yêu cầu của bạn" />
+          <textarea
+            class="input"
+            cols="30"
+            rows="5"
+            placeholder="gửi tin nhắn..."
+          ></textarea>
+          <input type="submit" class="input submit" value="gửi tin nhắn" />
+        </form>
+
+        <div class="map-container">
+          <div class="mapBg"></div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1718.2640092770423!2d106.6324951884008!3d11.05313654727823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1745077330709!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactMethod">
+        <div class="method">
+          <i class="fa-solid fa-location-dot contactIcon"></i>
+          <article class="text">
+            <h1 class="sub-heading">Location</h1>
+            <a href="https://www.google.com/maps/dir/11.0531332,106.6337813/11.053258,106.6338401/@11.0537941,106.6338705,1116m/data=!3m1!1e3!4m5!4m4!1m1!4e1!1m1!4e1?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"><p class="para">Tân Định thị xã bến cát tỉnh Bình Dương</p></a>
+          </article>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-envelope contactIcon"></i>
+          <article class="text">
+            <h1 class="sub-heading">Email</h1>
+           <a href="mailto:nguyenhoangson10092006@gmail.com" target="_blank"><p class="para">Email: nguyenhoangson10092006@gmail.com </p></a>
+          </article>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-phone contactIcon"></i>
+          <article class="text">
+            <h1 class="sub-heading">Phone</h1>
+          <a href="tel:0813017036" target="_blank"><p class="para">0813017036</p></a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
