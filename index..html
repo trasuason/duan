@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="./duan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.m,mmin.css"
+  />
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+
+
+
+
+    <title>Sơn Beverage</title>
+  </head>
+  <body>
+    <div class="mess">
+    <a href="https://www.facebook.com/?locale=vi_VN" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+  
+  </div>
+  <div class="git">
+    <href=""> <i class="fa-brands fa-square-github"></i></a>
+  </div>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo"></a>
+        <div id="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-item-cloud"></span>
+        </div>
+
+        <a href="#" class="logo_dau">
+          <img
+            src="./logo.png"
+            alt="Logo Hân"
+          />
+          <span>Sơn Beverage</span>
+        </a>
+
+        <nav class="menu">
+          <a href="#">Home</a>
+
+          <!-- Dropdown chỉ bọc Menu -->
+          <div class="dropdown">
+            <a href="#Menu">Menu ▾</a>
+            <div class="dropdown-content">
+              <a href="#trasua">Trà sữa</a>
+              <a href="#caffe">Cà phê</a>
+              <a href="#daxay">Đá xay</a>
+              <a href="#">Topping</a>
+            </div>
+          </div>
+
+          <a href="./about.html"target="_blank">About</a>
+          <a href="./contact.html" target="_blank">Contact</a>
+
+          <!-- Bọc input + button vào một khối riêng -->
+          <div class="search-box">
+            <input type="text" placeholder="Tìm đồ uống..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="signup">
+            <a href="./đangki.html" target="_blank">signup/signin</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <nav>
+      <div class="box">
+        <img 
+          src="./background.png  "
+          alt="quan tra sua"
+          width="600"
+          height="600"
+        /><br />
+        <h1 data-aos="animate__fadeInLeft">Wellcome Sơn Beverage</h1>
+        <p data-aos="animate__fadeInLeft">nơi những ly trà sữa không chỉ là đồ uống, mà còn là trải nghiệm!</p>
+      </div>
+    </nav>
+    <hr />
+
+    <div class="cart">
+      <h2 class="cart-title"></h2>
+      <div class="cart-content">
+        <div class="cart-box">
+          <img src="./truyenthong2.jpg" alt="" width="10" height="10" />
+          <div class="cart-detail">
+            <h2 class="cart-product-title">Trà Sữa Truyèn Thống</h2>
+            <span class="cart-price">25.000vnd</span>
+            <div class="cart-quantity"> 
+              <button id="decrement">-</button>
+              <span class="number">1</span>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash cart-remove"></i>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-title">Tổng</div>
+        <div class="total-price">0vnd</div>
+      </div>
+      <button class="btn-buy">Mua ngay</button>
+      <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+
+    <section class="shop">
+      <h1 class="selection-title" id="trasua" data-aos="animate__fadeInDown">Trà Sữa</h1>
+      <div class="product-content"  >
+        <div class="product-box"  >
+          <div class="img-box">
+           <a href="./menu1.html"target="_blank"> <img src="truyenthong2.jpg" /></a>
+          </div>
+          <h2 class="produc-title" >Trà Sữa Tuyền thống</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+          <a href="./menu1.html" target="_blank">  <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+
+        <div class="product-box" >
+          <div class="img-box">
+            <a href="./menu2.html" target="_blank"><img src="thaixanh2.jpg" /></a>
+          
+          </div>
+          <h2 class="produc-title">Trà Sữa Thái Xanh</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu2.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="product-box"  >
+          <div class="img-box">
+            <a href="./menu3.html"target="_blank"> <img src="./anhtrasua/OIP (1).jpg" /></a>
+          </div>
+          <h2 class="produc-title">Trà Sữa Khoai Môn</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu3.html"target="_blank"> <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="product-box"  >
+          <div class="img-box">
+           <a href="./menu4.html"target="_blank"> <img src="./anhtrasua/thaido.webp"  /></a>
+          </div>
+          <h2 class="produc-title">Trà Sữa Thái Đỏ</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu4.html" target="_blank">  <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="product-box"  >
+          <div class="img-box">
+           <a href="./menu5.html"target="_blank"> <img src="anhtrasua/matchacuoi.png" height="310px"  /> </a>
+          </div>
+          <h2 class="produc-title">Trà Sữa MatCha</h2>
+          <div class="price-and-cart">
+            <span class="price">23.000vnd </span>
+           <a href="./menu5.html"target="_blank"> <i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+          <a href="./menu6.html"target="_blank">  <img src="anhtrasua/ô long.jpg" /></a>
+          </div>
+          <h2 class="produc-title">Trà Sữa Ô Long Lài</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu6.html"target="_blank"></a><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="img-box">
+           <a href="./menu7.html"target="_blank"> <img src="anhtrasua/chocolate.webp" height="280px" /></a>
+          </div>
+          <h2 class="produc-title">Trà Sữa Chocolate</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu7.html"target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+
+        <div class="product-box">
+          <div class="img-box">
+            <a href="./menu8.html"target="_blank"><img src="anhtrasua/chanchauaden.jpg" height="280px" /></a>
+          </div>
+          <h2 class="produc-title">Sữa Tươi Chân Châu Đen</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu8.html"target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="img-box">
+            <a href="./menu9.html"target="_blank"><img src="anhtrasua/gaorang.jpg" height="280px"/></a>
+          </div>
+          <h2 class="produc-title">Trà Sữa Gạo Rang</h2>
+          <div class="price-and-cart">
+            <span class="price">25.000vnd </span>
+            <a href="./menu9.html"target="_blank"> <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+       
+     
+
+      </div>
+          
+       
+
+       
+    </section>
+  
+      <section class="caffe">
+        <h1 class="caffe-title" id="caffe"  data-aos="animate__fadeInDown">Cà Phê</h1>
+        <div class="caffe-content" >
+          <div class="caffe-box" >
+            <div class="img-caffe">
+           <a href="menu10.html">   <img src="./anhtrasua/caffesua.jpg" /></a>
+            </div>
+            <h2 class="caffehai-title">Caffe Sữa</h2>
+            <div class="price-and-caffe">
+                <span class="pricecaffe">16.000vnd </span>
+                <a href="menu10.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+
+
+          <div class="caffe-box" >
+            <div class="img-caffe">
+              <img src="anhtrasua/caffeden.jpg" height="310px" />
+            </div>
+            <h2 class="caffehai-title">Caffe Đen</h2>
+            <div class="price-and-caffe">
+              <span class="pricecaffe">12.000vnd </span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+              </div>
+              <div class="caffe-content">
+                <div class="caffe-box">
+                  <div class="img-caffe">
+                    <img src="anhtrasua/caffesocola.jpg" height="310px" />
+                  </div>
+                  <h2 class="caffehai-title">Caffe Socola</h2>
+                  <div class="price-and-caffe">
+                    <span class="pricecaffe">20.000vnd </span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+        
+                    </div>
+                   
+                    
+                </div>
+                <div class="caffe-content">
+                  <div class="caffe-box">
+                    <div class="img-caffe">
+                      <img src="anhtrasua/bacxiu.jpg" />
+                    </div>
+                    <h2 class="caffehai-title">Bạc Xỉu</h2>
+                    <div class="price-and-caffe">
+                      <span class="pricecaffe">20.000vnd </span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                   
+                  </div>
+                    </div>
+                    <div class="caffe-content">
+                      <div class="caffe-box">
+                        <div class="img-caffe">
+                          <img src="anhtrasua/caffemuoi.jpg" height="310px" />
+                        </div>
+                        <h2 class="caffehai-title">Caffe Muối</h2>
+                        <div class="price-and-caffe">
+                          <span class="pricecaffe">25.000vnd </span>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                       
+                          </div>
+                          </div>
+
+                          <div class="caffe-content">
+                            <div class="caffe-box">
+                              <div class="img-caffe">
+                                <img src="anhtrasua/caffekemchease.jpg" height="310px" />
+                              </div>
+                              <h2 class="caffehai-title">Caffe Kemcheese</h2>
+                              <div class="price-and-caffe">
+                                <span class="pricecaffe">28.000vnd </span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                              </div>
+                            </div>
+
+                          
+                          
+                 
+                
+           
+    </section>
+
+
+
+
+
+
+    <section class="caffe">
+      <h1 class="caffe-title" id="daxay"  data-aos="animate__fadeInDown">Đá Xay</h1>
+      <div class="caffe-content" >
+        <div class="caffe-box" >
+          <div class="img-caffe">
+            <img src="anhtrasua/daxaydautay.jpg" />
+          </div>
+          <h2 class="caffehai-title">Đá Xay Dâu Tây</h2>
+          <div class="price-and-caffe">
+            <span class="pricecaffe">25.000vnd </span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+
+        <div class="caffe-box" >
+          <div class="img-caffe">
+            <img src="anhtrasua/daxayvietquat.jpg" height="310px"/>
+          </div>
+          <h2 class="caffehai-title">Đá Xay Việt Quật</h2>
+          <div class="price-and-caffe">
+            <span class="pricecaffe">25.000vnd </span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+            </div>
+            <div class="caffe-content">
+              <div class="caffe-box">
+                <div class="img-caffe">
+                  <img src="anhtrasua/daxaychanh.jpg" />
+                </div>
+                <h2 class="caffehai-title">Đá Xay Chanh Dây</h2>
+                <div class="price-and-caffe">
+                  <span class="pricecaffe">25.000vnd </span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+      
+                  </div>
+                 
+                  
+              </div>
+              <div class="caffe-content">
+                <div class="caffe-box">
+                  <div class="img-caffe">
+                    <img src="anhtrasua/daxaymatcha.webp" height="310px" />
+                  </div>
+                  <h2 class="caffehai-title">Đá Xay Matcha</h2>
+                  <div class="price-and-caffe">
+                    <span class="pricecaffe">30.000vnd </span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+
+                 
+                </div>
+                  </div>
+                  <div class="caffe-content">
+                    <div class="caffe-box">
+                      <div class="img-caffe">
+                        <img src="anhtrasua/daxaymangcau.jpg" height="310px"/>
+                      </div>
+                      <h2 class="caffehai-title">Đá Xay Mãng Cầu</h2>
+                      <div class="price-and-caffe">
+                        <span class="pricecaffe">25.000vnd </span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                     
+                        </div>
+                        </div>
+
+                        <div class="caffe-content">
+                          <div class="caffe-box">
+                            <div class="img-caffe">
+                              <img src="anhtrasua/daxaysapoche.jpg" />
+                            </div>
+                            <h2 class="caffehai-title">Đá Xay Sapoche</h2>
+                            <div class="price-and-caffe">
+                              <span class="pricecaffe">25.000vnd </span>
+                              <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                          </div>
+
+                        
+                        
+               
+              
+         
+  </section>
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init({
+      useClassNames: true,
+      initClassName: false,
+      animatedClassName: 'animate__animated',
+    });
+    </script>
+    <script src="./duan.js"></script>
+  </body>
+</html>
